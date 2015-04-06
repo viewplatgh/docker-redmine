@@ -8,6 +8,10 @@ fi
 
 mkdir -p /opt/mysql/data
 mkdir -p /opt/redmine/data
+mkdir -p /opt/redmine/data/certs
+cp redmine.key /opt/redmine/data/certs
+cp redmine.crt /opt/redmine/data/certs
+chmod 400 /opt/redmine/data/certs/redmine.key
 
 docker run -p 443:443 -d --name=redmine \
 	-e REDMINE_HTTPS=true \

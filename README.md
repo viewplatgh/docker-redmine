@@ -48,22 +48,32 @@
 Dockerfile to build a Redmine container image.
 This is based on [Sameersbn docker-redmine](https://github.com/sameersbn/docker-redmine)
 
-The aim of this repo is to create a running redmine in docker container as simple/soon as possible.
-It's using an internal mysql.
+The aim of this repo is to create a running redmine in docker container as simple/soon as possible.It's using an internal mysql.
 
 # Steps to use
 - Pull viewpl/docker-redmine image
+
 ```bash
 docker pull viewpl/docker-redmine
 ```
 - Run the bash file to launch container
+
 ```bash
 ./runrdm.sh
 ```
 - Visit the redmine home page via browser
+
 https://localhost
+
 or if deployed on a remote machine
+
 https://[remote machine ip address]
+
+Ignore the security warning from browser
+
+- Use U/P admin/admin to login and use
+
+//NOTE: Following instructions are from [Sameersbn docker-redmine](https://github.com/sameersbn/docker-redmine)
 
 ## Version
 
