@@ -1,7 +1,7 @@
 # Reference:
 # http://github.com/sameersbn/docker-redmine  
 # http://github.com/phusion/baseimage-docker 
-FROM phusion/baseimage:0.9.15
+FROM phusion/baseimage:0.9.16
 MAINTAINER Rob Lao "viewpl@gmail.com" 
 
 ENV HOME /root
